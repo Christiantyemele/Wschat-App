@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "concurrently new \"vite\" \"cargo shuttle run --working-directory back\"",
+    "deploy": "cargo shuttle deploy --working-directory ./back",
     "lint": "eslint .",
     "preview": "vite preview"
   },

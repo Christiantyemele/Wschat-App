@@ -70,13 +70,12 @@ const websocket = new WebSocket("ws://localhost:5173/ws");
 
 // On open, do nothing - console.log() can be added for debugging purposes
 websocket.onopen = () => {
-  console.log("connected")
 
 }
 
 // On close, do nothing - console.log() can be added for debugging purposes
 websocket.onclose = () => {
-  console.log("closed")
+  
 }
 
 // On receiving a message from the server, parse the data and then create an entry in the chat
